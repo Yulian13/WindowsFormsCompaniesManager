@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace WindowsFormsCompaniesManager.EntityFramework.Models
 {
-	class Company
+	public class Company
 	{
 		public Guid Id { get; set; }
 		public string Name { get; set; }

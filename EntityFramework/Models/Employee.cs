@@ -1,18 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WindowsFormsCompaniesManager.EntityFramework.Models
 {
-	class Employee
+	public class Employee
 	{
 		public Guid Id { get; set; }
 		public string Name { get; set; }
 		public string Address { get; set; }
 		public string Phone { get; set; }
+
+		public Guid PositionId { get; set; }
 		public Position Position { get; set; }
+
+		public Guid DepartmentId { get; set; }
 		public Department Department { get; set; }
 
 
